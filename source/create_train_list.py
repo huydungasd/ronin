@@ -13,6 +13,8 @@ with open("train_list.txt","w") as f:
         f.write(f'/home/huydung/devel/intern/ronin/data_deep/data6/imu/{i}.csv\n')
     for i in range(105):
         f.write(f'/home/huydung/devel/intern/ronin/data_deep/data7/imu/{i}.csv\n')
+    for i in range(130):
+        f.write(f'/home/huydung/devel/intern/ronin/data_deep/data8/imu/{i}.csv\n')
 
 with open("val_list.txt","w") as f:
     for i in range(65, 69):
@@ -29,6 +31,8 @@ with open("val_list.txt","w") as f:
         f.write(f'/home/huydung/devel/intern/ronin/data_deep/data6/imu/{i}.csv\n')
     for i in range(105, 113):
         f.write(f'/home/huydung/devel/intern/ronin/data_deep/data7/imu/{i}.csv\n')
+    for i in range(130, 137):
+        f.write(f'/home/huydung/devel/intern/ronin/data_deep/data8/imu/{i}.csv\n')
 
 with open("test_list.txt","w") as f:
     for i in range(69, 73):
@@ -45,3 +49,5 @@ with open("test_list.txt","w") as f:
         f.write(f'/home/huydung/devel/intern/ronin/data_deep/data6/imu/{i}.csv\n')
     for i in range(113, 120):
         f.write(f'/home/huydung/devel/intern/ronin/data_deep/data7/imu/{i}.csv\n')
+    for i in range(137, 145):
+        f.write(f'/home/huydung/devel/intern/ronin/data_deep/data8/imu/{i}.csv\n')
