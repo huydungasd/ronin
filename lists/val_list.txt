@@ -34,8 +34,6 @@
 ./data_deep/data5/imu/140.csv
 ./data_deep/data5/imu/141.csv
 ./data_deep/data5/imu/142.csv
-./data_deep/data6/imu/27.csv
-./data_deep/data6/imu/28.csv
 ./data_deep/data6/imu/29.csv
 ./data_deep/data7/imu/95.csv
 ./data_deep/data7/imu/96.csv

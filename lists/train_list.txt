@@ -275,6 +275,8 @@
 ./data_deep/data6/imu/24.csv
 ./data_deep/data6/imu/25.csv
 ./data_deep/data6/imu/26.csv
+./data_deep/data6/imu/27.csv
+./data_deep/data6/imu/28.csv
 ./data_deep/data7/imu/0.csv
 ./data_deep/data7/imu/1.csv
 ./data_deep/data7/imu/2.csv

@@ -10,7 +10,7 @@ with open("./lists/train_list.txt","w") as f:
         f.write(f'{path}data_deep/data4/imu/{i}.csv\n')
     for i in range(125):
         f.write(f'{path}data_deep/data5/imu/{i}.csv\n')
-    for i in range(27):
+    for i in range(29):
         f.write(f'{path}data_deep/data6/imu/{i}.csv\n')
     for i in range(95):
         f.write(f'{path}data_deep/data7/imu/{i}.csv\n')
@@ -28,7 +28,7 @@ with open("./lists/val_list.txt","w") as f:
         f.write(f'{path}data_deep/data4/imu/{i}.csv\n')
     for i in range(125, 143):
         f.write(f'{path}data_deep/data5/imu/{i}.csv\n')
-    for i in range(27, 30):
+    for i in range(29, 30):
         f.write(f'{path}data_deep/data6/imu/{i}.csv\n')
     for i in range(95, 113):
         f.write(f'{path}data_deep/data7/imu/{i}.csv\n')
