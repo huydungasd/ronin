@@ -48,15 +48,17 @@ class CEAGlobSpeedSequence(CompiledSequence):
         init_tango_ori = quaternion.quaternion(*gt_all[['q', 'p1', 'p2', 'p3']].values[0])
         game_rv = quaternion.from_float_array(gt_all[['q', 'p1', 'p2', 'p3']].values)
 
-        init_rotor = init_tango_ori * game_rv[0].conj()
-        ori = init_rotor * game_rv
+        # init_rotor = init_tango_ori * game_rv[0].conj()
+        # ori = init_rotor * game_rv
 
-        nz = np.zeros(ts.shape)
-        gyro_q = quaternion.from_float_array(np.concatenate([nz, gyro], axis=1))
-        acce_q = quaternion.from_float_array(np.concatenate([nz, acce], axis=1))
+        # nz = np.zeros(ts.shape)
+        # gyro_q = quaternion.from_float_array(np.concatenate([nz, gyro], axis=1))
+        # acce_q = quaternion.from_float_array(np.concatenate([nz, acce], axis=1))
 
-        gyro_glob = quaternion.as_float_array(ori * gyro_q * ori.conj())[:, 1:]
-        acce_glob = quaternion.as_float_array(ori * acce_q * ori.conj())[:, 1:]
+        # gyro_glob = quaternion.as_float_array(ori * gyro_q * ori.conj())[:, 1:]
+        # acce_glob = quaternion.as_float_array(ori * acce_q * ori.conj())[:, 1:]
+        gyro_glob = gyro
+        acce_glob = acce
 
         self.ts = ts
         self.features = np.concatenate([gyro_glob, acce_glob], axis=1)
